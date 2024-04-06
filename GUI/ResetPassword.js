@@ -40,7 +40,7 @@ export default function ResetPassword({ navigation, route }) {
     const fetchResult = async () => {
         clearErrors();
         try {
-            const request = await fetch("http://192.168.31.78:9090/resetPassword/", {
+            const request = await fetch("http://localhost:port/resetPassword/", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"
