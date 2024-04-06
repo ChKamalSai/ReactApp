@@ -7,10 +7,10 @@ const app = express()
 const verificationCodes = new Map();
 
 
-const CLIENT_ID = '121670829870-jg65rqjj0kujdebaboq41qa6hrvpjp64.apps.googleusercontent.com';
-const CLEINT_SECRET = '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';
-const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
-const REFRESH_TOKEN = '1//040s0om0vOU5mCgYIARAAGAQSNgF-L9IrJBvVDFdRaosWkSr9W8aW1BqMBpn5BGdLlXuyFG2Cf3CuE9bfSmL4OjY3oQfFkyU7PQ';
+const CLIENT_ID =
+const CLEINT_SECRET = 
+const REDIRECT_URI = 
+const REFRESH_TOKEN = 
 
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
@@ -85,7 +85,7 @@ app.post('/create-event/', (req, res) => {
 
   try {
     const response = calendar.events.insert({
-      calendarId: 'kamalsaichettipally5535@gmail.com',
+      calendarId: ,
       resource: event,
     });
     console.log("Event created successfully")
@@ -121,7 +121,7 @@ app.post('/sendCode/',async(req, res) => {
       service: 'gmail',
       auth: {
         type: 'OAuth2',
-        user: 'kamalsaichettipally5535@gmail.com',
+        user: ,
         clientId: CLIENT_ID,
         clientSecret: CLEINT_SECRET,
         refreshToken: REFRESH_TOKEN,
