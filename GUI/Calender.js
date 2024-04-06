@@ -9,7 +9,7 @@ export default function Calender({ navigation, route }) {
     const fetchResult = async () => {
         console.log("hlep", username, email)
         try {
-            const request = await fetch("http://192.168.31.78:9090/create-event/", {
+            const request = await fetch("http://localhost:port/create-event/", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"
