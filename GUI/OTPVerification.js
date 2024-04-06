@@ -40,7 +40,7 @@ export default function OTPVerification({ navigation, route }) {
 
   const fetchResult = async () => {
     try {
-      const request = await fetch("http://192.168.31.78:9090/sendCode/", {
+      const request = await fetch("http://localhost:port/sendCode/", {
         method: "post",
         headers: {
           "Content-Type": "application/json"
@@ -76,7 +76,7 @@ export default function OTPVerification({ navigation, route }) {
   const sendData = async () => {
     try {
       const parserOTP=parseInt(otp.join(''));
-      const request = await fetch("http://192.168.31.78:9090/verifyCode/", {
+      const request = await fetch("http://localhost:port/verifyCode/", {
         method: "post",
         headers: {
           "Content-Type": "application/json"
