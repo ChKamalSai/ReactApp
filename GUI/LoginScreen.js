@@ -75,7 +75,7 @@ export default function LoginScreen({ navigation }) {
     const fetchResult = async () => {
         clearErrors();
         try {
-            const request = await fetch("http://ipaddress:9090/sign-in/", {
+            const request = await fetch("http://localhost:port/sign-in/", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"
