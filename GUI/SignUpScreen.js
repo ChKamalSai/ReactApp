@@ -98,7 +98,7 @@ export default function SignUpScreen({ navigation }) {
     const fetchResult = async () => {
         clearErrors();
         try {
-            const request = await fetch("http://ipaddress:9090/sign-up/", {
+            const request = await fetch("http://localhost:port/sign-up/", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"
