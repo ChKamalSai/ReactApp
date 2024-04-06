@@ -27,7 +27,7 @@ export default function LoginScreen({ navigation }) {
        
         GoogleSignin.configure({
             
-            androidClientId: "121670829870-0upqeb96ladm1h6b4vvjr1g8kfeuo61f.apps.googleusercontent.com"
+            androidClientId:
         });
     }, []);
 
@@ -75,7 +75,7 @@ export default function LoginScreen({ navigation }) {
     const fetchResult = async () => {
         clearErrors();
         try {
-            const request = await fetch("http://192.168.31.78:9090/sign-in/", {
+            const request = await fetch("http://ipaddress:9090/sign-in/", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"
