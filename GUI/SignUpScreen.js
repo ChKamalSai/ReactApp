@@ -28,7 +28,7 @@ export default function SignUpScreen({ navigation }) {
     const passwordRegex = /^[a-zA-Z0-9@]+$/;
     useEffect(() => {
         GoogleSignin.configure({
-            androidClientId: "121670829870-0upqeb96ladm1h6b4vvjr1g8kfeuo61f.apps.googleusercontent.com"
+            androidClientId:
         });
     }, []);
 
@@ -98,7 +98,7 @@ export default function SignUpScreen({ navigation }) {
     const fetchResult = async () => {
         clearErrors();
         try {
-            const request = await fetch("http://192.168.31.78:9090/sign-up/", {
+            const request = await fetch("http://ipaddress:9090/sign-up/", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"
