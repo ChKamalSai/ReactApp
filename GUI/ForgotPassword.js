@@ -30,7 +30,7 @@ export default function ForgotPassword({ navigation }) {
     const fetchResult = async () => {
         clearErrors();
         try {
-            const request = await fetch("http://192.168.31.78:9090/verify-email/", {
+            const request = await fetch("http://localhost:port/verify-email/", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"
